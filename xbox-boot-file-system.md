@@ -16,9 +16,9 @@ XBFS_HEADER-\>Magic.
 
 Absolute offsets:
 
-`0x10000`
-`0x810000`
-`0x820000`
+- 0x10000
+- 0x810000
+- 0x820000
 
 ## Checking for file existance
 
