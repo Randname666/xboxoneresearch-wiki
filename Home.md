@@ -17,6 +17,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Xbox Operating System](xbox-operating-system)
   - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
   - [Flash (XBFS)](xbox-boot-file-system)
+  - [Hard drive](harddrive)
   - [Console revisions](console-revisions)
   - [Devkit types](devkit-types)
   - [Security Processor](security-processor)
