@@ -16,7 +16,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Bootloaders](bootloaders)
   - [Xbox Operating System](xbox-operating-system)
   - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
-  - [Flash (XBFS)](xbox-boot-file_system)
+  - [Flash (XBFS)](xbox-boot-file-system)
   - [Console revisions](console-revisions)
   - [Devkit types](devkit-types)
   - [Security Processor](security-processor)
