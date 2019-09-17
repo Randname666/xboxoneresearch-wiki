@@ -49,7 +49,6 @@ Size: 0x400
 | 0x20   | FILE_COUNT \* sizeof(XBFS_FILE_ENTRY) | struct XBFS_FILE_ENTRY | File Entries       |
 | 0x3D0  | 0x10                                     | byte\[\]                 | UUID               |
 | 0x3E0  | 0x20                                     | byte\[\]                 | SHA256 Hash        |
-|        |                                          |                          |                    |
 
   - Sequence number: Wraps around, aka 0xFF -\> 0x00. 0x00 would be
     latest.
@@ -63,38 +62,38 @@ Size: 0x10
 | 0x00   | 0x04   | uint32 | Offset (page count) |
 | 0x04   | 0x04   | uint32 | Size (page count)   |
 | 0x08   | 0x08   | uint64 | Unknown             |
-|        |        |        |                     |
 
 ## File Entries
 
-| Index | Name          | Information            |
-| ----- | ------------- | ---------------------- |
-| 01    | 1smcbl_a.bin | SMC bootloader, slot A |
-| 02    | header.bin    | Flash header           |
-| 03    | devkit.ini    | devkit init            |
-| 04    | mtedata.cfg   | MTE data ???           |
-| 05    | certkeys.bin  | Certificate keys       |
-| 06    | smcerr.log    | SMC error log          |
-| 07    | system.xvd    | SystemOS xvd           |
-| 08    | $sosrst.xvd   | SystemOS reset ???     |
-| 09    | download.xvd  | Download xvd ???       |
-| 10    | smc_s.cfg    | SMC config - signed    |
-| 11    | sp_s.cfg     | SP config - signed     |
-| 12    | os_s.cfg     | OS config - signed     |
-| 13    | smc_d.cfg    | SMC config - decrypted |
-| 14    | sp_d.cfg     | SP config - decrypted  |
-| 15    | os_d.cfg     | OS config - decrypted  |
-| 16    | smcfw.bin     | SMC firmware           |
-| 17    | boot.bin      | Main Bootloader ???    |
-| 18    | host.xvd      | HostOS xvd             |
-| 19    | settings.xvd  | Settings xvd           |
-| 20    | 1smcbl_b.bin | SMC bootloader, slot B |
-| 21    | bootanim.dat  | Bootanimation          |
-| 22    | sostmpl.xvd   | SystemOS template xvd  |
-| 23    | update.cfg    | Update config / log?   |
-| 24    | sosinit.xvd   | SystemOS init xvd      |
-| 25    | hwinit.cfg    | Hardware init config   |
-|       |               |                        |
+| Index | Name          | Format  | Plaintext | Information                    |
+| ----- | ------------- | ------- | ----------|------------------------------- |
+| 01    | 1smcbl_a.bin  | binary  |        no | SMC bootloader, slot A         |
+| 02    | header.bin    | binary  |       yes | XBFS header                    |
+| 03    | devkit.ini    | binary  |        no | devkit ini                     |
+| 04    | mtedata.cfg   | binary  |        no | MTE data                       |
+| 05    | certkeys.bin  | binary  |       yes | Keyblobs & console certificate |
+| 06    | smcerr.log    | binary  |        no | SMC error log                  |
+| 07    | system.xvd    | xvd     |       yes | SystemOS VM partition          |
+| 08    | $sosrst.xvd   | xvd     |       yes | SystemOS restore               |
+| 09    | download.xvd  | xvd     |       yes | Download     ???               |
+| 10    | smc_s.cfg     | binary  |        no | SMC config - static            |
+| 11    | sp_s.cfg      | binary  | partially | SP config - static             |
+| 12    | os_s.cfg      | binary  |        no | OS config - static             |
+| 13    | smc_d.cfg     | binary  |        no | SMC config - dynamic           |
+| 14    | sp_d.cfg      | binary  |        no | SP config - dynamic            |
+| 15    | os_d.cfg      | binary  |        no | OS config - dynamic            |
+| 16    | smcfw.bin     | binary  |        no | SMC firmware                   |
+| 17    | boot.bin      | binary  |        no | Bootloaders                    |
+| 18    | host.xvd      | xvd     |       yes | HostOS partition               |
+| 19    | settings.xvd  | xvd     |       yes | Settings                       |
+| 20    | 1smcbl_b.bin  | binary  |        no | SMC bootloader, slot B         |
+| 21    | bootanim.dat  | binary  |       yes | Bootanimation                  |
+| 22    | sostmpl.xvd   | xvd     |       yes | SystemOS template              |
+| 23    | update.cfg    | binary  |       yes | Update config / log?           |
+| 24    | sosinit.xvd   | xvd     |       yes | SystemOS init                  |
+| 25    | hwinit.cfg    | binary  |        no | Hardware init config           |
+
+Note: Only XVD header is plaintext, data portion is encrypted as usual.
 
 ## Access via SRA/SystemOS
 
