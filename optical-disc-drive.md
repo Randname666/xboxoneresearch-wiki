@@ -181,14 +181,14 @@ ODDFW update finished, hr = 80910018
 
 ## Philips / Lite-On PLDS DG-6M1S
 
-![PLDS DG6M1S label](plds_dg6m1s_label.JPG)
-![PLDS DG6M1S pcb mounted]plds_dg6m1s_pcb_mounted.JPG)
-![PLDS DG6M1S pcb front](plds_dg6m1s_pcb_front.JPG)
-![PLDS DG6M1S pcb back](plds_dg6m1s_pcb_back.JPG)
+![PLDS DG6M1S label](optical-disc-drive/plds_dg6m1s_label.JPG)
+![PLDS DG6M1S pcb mounted](optical-disc-drive/plds_dg6m1s_pcb_mounted.JPG)
+![PLDS DG6M1S pcb front](optical-disc-drive/plds_dg6m1s_pcb_front.JPG)
+![PLDS DG6M1S pcb back](optical-disc-drive/plds_dg6m1s_pcb_back.JPG)
 
 ## Philips / Lite-On PLDS DG-6M2S
 
-![PLDS DG6M2S label](plds_dg6m2s_label.JPG)
-![PLDS DG6M2S pcb mounted]plds_dg6m2s_pcb_mounted.JPG)
-![PLDS DG6M2S pcb front](plds_dg6m2s_pcb_front.JPG)
-![PLDS DG6M2S pcb back](plds_dg6m2s_pcb_back.JPG)
+![PLDS DG6M2S label](optical-disc-drive/plds_dg6m2s_label.JPG)
+![PLDS DG6M2S pcb mounted](optical-disc-drive/plds_dg6m2s_pcb_mounted.JPG)
+![PLDS DG6M2S pcb front](optical-disc-drive/plds_dg6m2s_pcb_front.JPG)
+![PLDS DG6M2S pcb back](optical-disc-drive/plds_dg6m2s_pcb_back.JPG)
