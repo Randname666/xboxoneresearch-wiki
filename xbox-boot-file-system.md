@@ -96,4 +96,10 @@ Size: 0x10
 | 25    | hwinit.cfg    | Hardware init config   |
 |       |               |                        |
 
-## Access via Developer Mode
+## Access via SRA/SystemOS
+
+Access to the Flash from SystemOS is possible via the provided pipes:
+
+`\\.\Xvuc\FlashFs\` - Connects to the Flash's NTFS filter driver on host, providing a NTFS like environment compatible with most Win32 file APIs. Reading specific files is possible by simply appending them to the pipe path. Ex: `\\.\Xvuc\FlashFs\sp_s.cfg` would give you a file handle to sp_s.cfg. 
+
+`\\.\Xvuc\Flash\` - Unlike the filtered pipe above, this pipe provides direct access to the flash, without any kind of file system filter. Refer above for more information. 
