@@ -12,4 +12,4 @@ See [XBFS](xbox-boot-file-system).
 TBD
 
 ## References
-[https://www.electronicsdatasheets.com/manufacturers/sk-hynix/parts/h26m42003gmr](SK Hynix H26M42003GMR)
+[SK Hynix H26M42003GMR](https://www.electronicsdatasheets.com/manufacturers/sk-hynix/parts/h26m42003gmr)
