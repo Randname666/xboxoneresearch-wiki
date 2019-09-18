@@ -29,6 +29,7 @@ See [FAQ](faq) for frequently asked questions.
 ### File formats
   - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
   - [XVI](xvi)
+  - [XCT](xct)
 
 ### Dev Mode
   - [Devkit types](devkit-types)
