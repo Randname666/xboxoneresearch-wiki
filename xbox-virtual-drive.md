@@ -44,5 +44,5 @@ Non-XVC files use an ODK which appears to be static for all XVDs (but differs be
 [xvdtool by emoose](https://github.com/emoose/xvdtool)
 
 ## References
-- [XVD info by emoose](https://github.com/emoose/xvdtool/blob/master/xvd_info.md)
-- [AES-XTS](https://en.wikipedia.org/wiki/Disk_encryption_theory#XTS)
+- [XVD info by emoose](https://github.com/emoose/xvdtool/blob/master/xvd_info.md) on github
+- [AES-XTS](https://en.wikipedia.org/wiki/Disk_encryption_theory#XTS) on wikipedia
