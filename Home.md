@@ -14,6 +14,7 @@ See [FAQ](faq) for frequently asked questions.
 ### Hardware
   - [Console revisions](console-revisions)
   - [eMMC / Flash](eMMC---Flash)
+  - [Wifi](wifi)
   - [Optical Disc Drive](optical-disc-drive)
 
 ### Software
