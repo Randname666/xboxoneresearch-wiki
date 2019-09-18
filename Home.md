@@ -30,6 +30,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
   - [XVI](xvi)
   - [XCT](xct)
+  - [Savegames](savegames)
 
 ### Dev Mode
   - [Devkit types](devkit-types)
