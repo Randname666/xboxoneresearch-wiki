@@ -20,7 +20,7 @@ Not a target of this project! While this is not in our own priorities, this is w
 
 ## How does the guest virtual machines communicate with the Host? ##
 Named pipes / special kernel broker drivers are used to push data between the OS layers. ...
-The Xbox One is known to currently use a driver common on all OS VMs known as "XVIO" which appear to use shared memory ring buffers to communicate between the host and guess virtual machines.
+The Xbox One is known to currently use a driver common on all OS VMs known as "XVIO" which appear to use shared memory ring buffers to communicate between the host and guest virtual machines.
 
 ## Can we draw standard Win32 UI? ##
 The possibility of "escaping" the UWP sandbox thats originally targeted at homebrew developers is tempting and of course delivers a bigger potential for developers to port applications more easily. However, as the rendering is done in a non-Win32-conform way, it is also a challenge to achieve displaying such Win32 GUI application. See [XboxUI](xbox-ui) for further info. 
