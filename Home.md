@@ -23,6 +23,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Security Processor](security-processor)
   - [Optical Disc Drive](optical-disc-drive)
   - [Certificates](certificates)
+  - [Bootanimation](bootanimation)
 
 ## Important
 
