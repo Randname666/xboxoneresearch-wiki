@@ -13,6 +13,7 @@ See [FAQ](faq) for frequently asked questions.
 
 ### Hardware
   - [Console revisions](console-revisions)
+  - [CPU](cpu)
   - [eMMC / Flash](eMMC---Flash)
   - [Wifi](wifi)
   - [Ethernet](ethernet)
