@@ -13,6 +13,7 @@ See [FAQ](faq) for frequently asked questions.
 
 ### Hardware
   - [Console revisions](console-revisions)
+  - [eMMC / Flash](eMMC---Flash)
   - [Optical Disc Drive](optical-disc-drive)
 
 ### Software
