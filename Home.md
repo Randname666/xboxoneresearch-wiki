@@ -14,6 +14,7 @@ See [FAQ](faq) for frequently asked questions.
 ### Hardware
   - [Console revisions](console-revisions)
   - [CPU](cpu)
+  - [Southbridge](southbridge)
   - [eMMC / Flash](eMMC---Flash)
   - [Wifi](wifi)
   - [Ethernet](ethernet)
