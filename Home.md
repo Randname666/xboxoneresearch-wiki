@@ -11,19 +11,29 @@ See [FAQ](faq) for frequently asked questions.
 
 ## Getting started
 
-  - [Setting up your console](setup-dev-mode)
-  - [Installing Compatible Software](installing-compatible_software)
+### Hardware
+  - [Console revisions](console-revisions)
+  - [Optical Disc Drive](optical-disc-drive)
+
+### Software
   - [Bootloaders](bootloaders)
   - [Xbox Operating System](xbox-operating-system)
-  - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
-  - [Flash (XBFS)](xbox-boot-file-system)
   - [Hard drive](harddrive)
-  - [Console revisions](console-revisions)
-  - [Devkit types](devkit-types)
+  - [Flash (XBFS)](xbox-boot-file-system)
   - [Security Processor](security-processor)
-  - [Optical Disc Drive](optical-disc-drive)
   - [Certificates](certificates)
+  - [Special NTFS USB files](special-ntfs-usb-files)
   - [Bootanimation](bootanimation)
+  - [Xbox UI](xbox-ui)
+
+### File formats
+  - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
+  - [XVI](xvi)
+
+### Dev Mode
+  - [Devkit types](devkit-types)
+  - [Setting up your console](setup-dev-mode)
+  - [Installing Compatible Software](installing-compatible_software)
 
 ## Important
 
