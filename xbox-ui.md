@@ -10,7 +10,7 @@ C:\\Windows\\XboxUI.
 
 ## Components
 
-![<File:Xboxui> schema.png](Xboxui_schema.png "File:Xboxui schema.png")
+![XboxUI Schema](xbox-ui/xboxui_schema.png)
 
 ## Win32 process rendering
 
