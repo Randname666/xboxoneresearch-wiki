@@ -14,7 +14,7 @@ After the embedded XVD comes an (optional) area for the hash tree, the tree is a
 
 Following the hash tree is another optional area reserved for user data (also known as Persistent Local Storage). This area is for games to store local-only data, although some system XVD packages seem to store data here too.
 
-Finally after the user data comes the actual XVD data. If the XVD file is an XVC the first 3 blocks are reserved for an XVC descriptor (which is never encrypted). This specifies the content ID, any encryption keys used, the chunks used to update packages (if the XVC is using chunk-based updates) and offsets/lengths/keyIDs of the different XVC regions in the file, along with other metadata. XVC regions can be encrypted with any of the keys specified in the XVC descriptor. The region-based encryption also includes the XVC region ID as part of the AES-128-CTR IV/counter.
+Finally after the user data comes the actual XVD data. If the XVD file is an XVC the first 3 blocks are reserved for an XVC descriptor (which is never encrypted). This specifies the content ID, any encryption keys used, the chunks used to update packages (if the XVC is using chunk-based updates) and offsets/lengths/keyIDs of the different XVC regions in the file, along with other metadata. XVC regions can be encrypted with any of the keys specified in the XVC descriptor. The region-based encryption also includes the XVC region ID as part of the AES-XTS IV/counter (known as data unit number for AES-XTS).
 
 Then comes the actual filesystem data. This data is encrypted with the CIK (can either be the decrypted value of the encrypted CIK in the XVD header if it's an XVD, or the key corresponding to the XVC key GUID)
 
@@ -31,7 +31,7 @@ From a security standpoint XVDs seem very secure:
 
 To make sure the package is authenticated by Microsoft and not tampered with the console just needs to verify the signature of the header-hash, verify the top-most hash tree hash and then verify that each hash in the hash tree matches up with the actual hash. This is similar to the way STFS packages were secured on the Xbox 360, however instead of having the hash tables scattered around the file (as with STFS) they're instead stored before the data actually begins.
 
-The data blocks inside XVD files are also secured with customized AES-128-CTR encryption (the encrypted data is then used for the hashes), with XVC packages the Xbox One either retrieves the encryption key over Xbox Live or retrieves it from the game disc, however it seems that the keys from these methods don't work as CIK keys. It's assumed that these keys are obfuscated/encrypted in some way (possibly with the retail ODK in the same way that the encrypted CIK in non-XVC files is encrypted?)
+The data blocks inside XVD files are also secured with AES-XTS encryption (the encrypted data is then used for the hashes), with XVC packages the Xbox One either retrieves the encryption key over Xbox Live or retrieves it from the game disc, however it seems that the keys from these methods don't work as CIK keys. It's assumed that these keys are obfuscated/encrypted in some way (possibly with the retail ODK in the same way that the encrypted CIK in non-XVC files is encrypted?)
 
 Non-XVC files use an ODK which appears to be static for all XVDs (but differs between retail/devkits ?), this key is used to decrypt the encrypted CIK in the XVD header, the decrypted CIK is then used to decrypt the XVD data.
 
@@ -40,8 +40,9 @@ Non-XVC files use an ODK which appears to be static for all XVDs (but differs be
 
 - ODK: Offline Distribution Key, used to decrypt the header's encrypted CIK, and likely any CIK stored outside the package
 
-## Credits
-XVD info is taken from [emoose's xvdtool repo](https://github.com/emoose/xvdtool/blob/master/xvd_info.md)
-
 ## Tools
 [xvdtool by emoose](https://github.com/emoose/xvdtool)
+
+## References
+- [XVD info by emoose](https://github.com/emoose/xvdtool/blob/master/xvd_info.md)
+- [AES-XTS](https://en.wikipedia.org/wiki/Disk_encryption_theory#XTS)
