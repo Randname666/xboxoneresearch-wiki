@@ -76,7 +76,7 @@ into your Xbox One console.
       ```
   - Connect to the console:
       ```
-      telnet <xboxoneip/hostname> 23
+      telnet <Xbox One IP or Hostname> 23
       ```
   - You should now be connected\!
   - Navigate to your USB drive
@@ -94,13 +94,15 @@ Now you can reconnect to the console via SSH or SMB using your new user.
 Open up the File Explorer on your Windows machine and enter the
 following into your path bar:
 
-`\\<Xbox One IP/Hostname>`
+```
+\\<Xbox One IP or Hostname>
+```
 
 It will prompt you for login details. We can use the Xbox Device Portal
 for this:
 
   - Open up your web browser and enter:
-    `https://<xboxoneip/hostname>:11443`
+    `https://<Xbox One IP or Hostname>:11443`
   - Go to File explorer
   - On the right hand side; you will see "Browse"
   - Select it and use the login details provided
