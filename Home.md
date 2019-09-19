@@ -11,6 +11,9 @@ See [FAQ](faq) for frequently asked questions.
 
 ## Getting started
 
+### General
+  - [Exploits](exploits)
+
 ### Hardware
   - [Console revisions](console-revisions)
   - [CPU](cpu)
