@@ -40,7 +40,7 @@ See [FAQ](faq) for frequently asked questions.
 ### Dev Mode
   - [Devkit types](devkit-types)
   - [Setting up your console](setup-dev-mode)
-  - [Installing Compatible Software](installing-compatible_software)
+  - [Installing Compatible Software](installing-compatible-software)
 
 ## Important
 
