@@ -22,6 +22,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Wifi](wifi)
   - [Ethernet](ethernet)
   - [Optical Disc Drive](optical-disc-drive)
+  - [RF unit](rf-unit)
 
 ### Software
   - [Bootloaders](bootloaders)
