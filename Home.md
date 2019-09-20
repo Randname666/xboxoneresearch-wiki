@@ -25,6 +25,7 @@ See [FAQ](faq) for frequently asked questions.
   - [RF unit](rf-unit)
 
 ### Software
+  - [Telemetry](telemetry)
   - [Bootloaders](bootloaders)
   - [Xbox Operating System](xbox-operating-system)
   - [Hard drive](harddrive)
