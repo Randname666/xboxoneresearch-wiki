@@ -36,6 +36,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Special NTFS USB files](special-ntfs-usb-files)
   - [Bootanimation](bootanimation)
   - [Xbox UI](xbox-ui)
+  - [XCRDUtil](xcrdutil)
 
 ### File formats
   - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
