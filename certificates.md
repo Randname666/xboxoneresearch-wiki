@@ -165,3 +165,5 @@ enum CERTIFICATE_CAPABILITIES : ushort {
     VIRT_CAP_SP_DEVKIT_EQUIV = 0xF003
 };
 ```
+
+Information about capabilities gathered from: `C:\Windows\DefaultApp\XboxOneExtensions.dll`
