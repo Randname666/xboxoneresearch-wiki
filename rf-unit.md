@@ -2,6 +2,25 @@
 
 ## Info
 
+### Xbox One (PHAT)
+Part Number: X867281-005
+
+Components:
+- Infrared Receiver (U1)
+- Soundchip - ISD9160F (U4)
+- Connector to sound speaker (J1)
+- Wifi Antenna connector (J2)
+- FPC connector (J3)
+- Motherboard connector (J8)
+
+#### Flashing the soundchip
+- [Trumpet project](https://github.com/robbie-cao/trumpet) on github
+- [Piccolo project](https://github.com/robbie-cao/piccolo) on github
+
+### Xbox One S
+
+### Xbox One X
+
 ## Pictures
 Xbox One (PHAT)
 
