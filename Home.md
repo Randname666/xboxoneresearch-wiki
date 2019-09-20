@@ -31,6 +31,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Flash (XBFS)](xbox-boot-file-system)
   - [Security Processor](security-processor)
   - [Certificates](certificates)
+  - [Xbox Game Disc](xbox-game-disc)
   - [Special NTFS USB files](special-ntfs-usb-files)
   - [Bootanimation](bootanimation)
   - [Xbox UI](xbox-ui)
