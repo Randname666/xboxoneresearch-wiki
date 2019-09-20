@@ -40,6 +40,7 @@ See [FAQ](faq) for frequently asked questions.
   - [Xbox Virtual Drives (XVD)](xbox-virtual-drive)
   - [XVI](xvi)
   - [XCT](xct)
+  - [VBI](vbi)
   - [Savegames](savegames)
 
 ### Dev Mode
